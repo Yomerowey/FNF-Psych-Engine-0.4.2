@@ -68,6 +68,7 @@ jobs:
           
       - name: Build Log
         run: |
+          haxelib run lime rebuild extension-webm android
           haxelib run lime setup android
           haxelib run lime build android -final
           
