@@ -1,0 +1,5 @@
+The Video .webm file 
+The audio .OGG file
+The frames per second .txt file
+
+And it can have any resolution
