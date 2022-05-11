@@ -917,7 +917,13 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.downScroll) {
 			botplayTxt.y = timeBarBG.y - 78;
 		}
-
+	
+                var creditTxt:FlxText = new FlxText(5, 5, "PORT BY EL SECH 69", 20);
+                creditTxt.setFormat(Paths.font('vcr.ttf'), 24, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+                creditTxt.borderSize = 1.5;
+                creditTxt.cameras = [camHUD];
+                add(creditTxt);
+	
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
